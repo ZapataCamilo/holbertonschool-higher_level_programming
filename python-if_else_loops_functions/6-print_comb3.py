@@ -5,6 +5,6 @@ for i in range(0, 10):
         if i >= f:
             continue
         elif i == 8 and f == 9:
-            print(f'{i}{f}'.format(i, f))
+            print('{}{}'.format(i, f))
         else:
-            print(f'{i}{f}, '.format(i, f), end='')
+            print('{}{}, '.format(i, f), end='')
