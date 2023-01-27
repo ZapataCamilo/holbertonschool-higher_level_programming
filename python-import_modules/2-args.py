@@ -16,5 +16,3 @@ if __name__ == '__main__':
             i == i + 1
             if str[i]:
                 print('{}: {}'.format(i, str[i]))
-    elif str[0]:
-        print('{} arguments.'.format(str_len))
