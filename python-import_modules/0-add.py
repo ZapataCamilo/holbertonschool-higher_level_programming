@@ -5,4 +5,4 @@ if __name__ == '__main__':
     b = 2
 
     pr = add(a, b)
-    print('{} + {} = {}\n'.format(a, b, pr))
+    print('{} + {} = {}'.format(a, b, pr))
