@@ -1,3 +1,3 @@
 def simple_delete(a_dictionary, key=""):
-    a_dictionary.remove(key, None)
+    a_dictionary.pop(key, None)
     return a_dictionary
