@@ -6,4 +6,4 @@ class Square:
     """This class instance size"""
 
     def __init__(self, __size) -> None:
-        self.__size = 3
+        self.__size = __size
