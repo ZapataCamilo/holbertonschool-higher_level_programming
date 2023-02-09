@@ -37,3 +37,8 @@ TypeError: b must be an integer
 
 >>> add_integer(-3.234, 3)
 0
+
+>>> add_integer(3, float('NaN'))
+Traceback (most recent call last):
+...
+ValueError: cannot convert float NaN to integer
