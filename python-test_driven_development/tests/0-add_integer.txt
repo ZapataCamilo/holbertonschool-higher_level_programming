@@ -32,3 +32,5 @@ TypeError: add_integer() missing 1 required positional argument: 'a'
 
 >>> add_integer(3, 3.5)
 6
+>>> add_integer(312321432451.00434223000, 43243254365341.23243)
+43555575797792
