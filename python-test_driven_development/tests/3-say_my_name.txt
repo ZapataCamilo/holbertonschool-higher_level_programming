@@ -14,3 +14,13 @@ TypeError: say_my_name() missing 1 required positional argument: 'first_name'
 Traceback (most recent call last):
 ...
 TypeError: unsupported operand type(s) for /: 'str' and 'str'
+
+>>> say_my_name('Camilo', 'Zapata', 'Londoño')
+Traceback (most recent call last):
+...
+TypeError: say_my_name() takes from 1 to 2 positional arguments but 3 were given
+
+>>> say_my_name('Camilo', 17)
+Traceback (most recent call last):
+...
+TypeError: last_name must be a string
