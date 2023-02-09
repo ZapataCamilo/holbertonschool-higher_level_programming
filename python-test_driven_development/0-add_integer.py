@@ -1,16 +1,9 @@
 #!/usr/bin/python3
-"""
->>> add_integer(5, 9)
-14
-"""
+"""This function is to add two integers"""
 
 
 def add_integer(a, b=98):
-    """
-    >>> add_integer(5, 5)
-    10
-    """
-
+    """Adds two integers"""
     if not isinstance(a, int) and not isinstance(a, float):
         raise TypeError("a must be an integer")
     elif not isinstance(b, int) and not isinstance(b, float):
