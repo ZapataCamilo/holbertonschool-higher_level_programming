@@ -1,4 +1,4 @@
->>> say_my_name = __import__('3-say_my_name').say_my_name
+>>> say_my_name = __import__("3-say_my_name").say_my_name
 
 >>> say_my_name(1, 2)
 Traceback (most recent call last):
@@ -8,4 +8,14 @@ TypeError: first_name must be a string
 >>> say_my_nam()
 Traceback (most recent call last):
 ...
-TypeError: say_my_name() missing 1 required positional argument: 'first_name'
+NameError: name 'say_my_nam' is not defined
+
+>>> say_my_nam('Camilo', 'Zatapa')
+Traceback (most recent call last):
+..
+NameError: name 'say_my_nam' is not defined
+
+>>> say_my_nam('Camilo')
+Traceback (most recent call last):
+...
+NameError: name 'say_my_nam' is not defined
