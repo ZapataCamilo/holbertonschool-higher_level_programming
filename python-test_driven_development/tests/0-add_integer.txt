@@ -1,0 +1,13 @@
+>>> add_integer = __import__('0-add_integer').add_integer
+>>> add_integer(30, 30)
+60
+>>> add_integer(1 + 'b')
+Traceback (most recent call last):
+...
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+>>> add_integer('a' + 'b')
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
+>>> add_integer(5, 5)
+10
