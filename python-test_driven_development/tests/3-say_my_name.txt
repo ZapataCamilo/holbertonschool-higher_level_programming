@@ -9,13 +9,3 @@ TypeError: first_name must be a string
 Traceback (most recent call last):
 ...
 NameError: name 'say_my_nam' is not defined
-
->>> say_my_nam('Camilo', 'Zatapa')
-Traceback (most recent call last):
-..
-NameError: name 'say_my_nam' is not defined
-
->>> say_my_nam('Camilo')
-Traceback (most recent call last):
-...
-NameError: name 'say_my_nam' is not defined
