@@ -5,7 +5,7 @@
 import unittest
 max_integer = __import__('6-max_integer').max_integer
 
-class TestMaxInteger:
+class TestMaxInteger(unittest.TestCase):
     """To check the code"""
 
     def test_element(self):
@@ -46,6 +46,11 @@ class TestMaxInteger:
     def test_list_str(self):
         str_list = ['Name', 'Camilo', 'Colombia']
         self.assertEqual(max_integer(str_list), 'Name')
+    
+    def test_empty_list(self):
+        """If the lisy is empty"""
+        self.assertEqual(max_integer(""), None)
+
 
 if __name__ == '__main__':
     unittest.main()
