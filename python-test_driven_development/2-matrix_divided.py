@@ -1,8 +1,10 @@
 #!/usr/bin/python3
 """This function is to testing"""
 
+
 def matrix_divided(matrix, div):
     """divides all elements of a matrix"""
+
     ms1 = 'matrix must be a matrix (list of lists) of integers/floats'
     new_mtx = []
 
