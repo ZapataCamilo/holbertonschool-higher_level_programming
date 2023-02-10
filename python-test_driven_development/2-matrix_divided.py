@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-
+"""This function is to testing"""
 
 def matrix_divided(matrix, div):
     """divides all elements of a matrix"""
