@@ -18,7 +18,7 @@ class TestMaxInteger(unittest.TestCase):
         """If is a string"""
 
         string = 'Hola'
-        self.assertEqual(max_integer(string), 'Hola')
+        self.assertEqual(max_integer(string), 'o')
     
     def test_float(self):
         """If is a float"""
