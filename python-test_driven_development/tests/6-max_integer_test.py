@@ -27,8 +27,25 @@ class TestMaxInteger:
 
     def test_order_list(self):
         """"It is an ordered list"""
+
         order = [1, 2, 3, 4, 5, 6, 7, 8 ,9]
         self.assertEqual(max_integer(order), 9)
+
+    def test_max_at_bn(self):
+        """Max integer at beginnig"""
+
+        bn = [9, 3, 4, 5, 6, 7, 1]
+        self.assertEqual(max_integer(bn), 9)
+
+    def test_same_number(self):
+        """There are two equal numbers"""
+
+        equal = [9, 3, 4, 5, 6, 4, 1]
+        self.assertEqual(max_integer(equal), 9)
+    
+    def test_list_str(self):
+        str_list = ['Name', 'Camilo', 'Colombia']
+        self.assertEqual(max_integer(str_list), 'Name')
 
 if __name__ == '__main__':
     unittest.main()
