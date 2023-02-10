@@ -89,4 +89,4 @@ class Rectangle:
         area1 = rect_1.__height * rect_1.__width
         area2 = rect_2.__height * rect_2.__width
 
-        return rect_1 if area1 > area2 else rect_2
+        return rect_1 if area1 >= area2 else rect_2
