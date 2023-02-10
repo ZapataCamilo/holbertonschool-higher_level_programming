@@ -1,3 +1,8 @@
+testing 3-say_my_name.py
+------------------------
+Test #1 import say_my_name module
+
+>>> say_my_name = __import__('3-say_my_name').say_my_name
 >>> say_my_name = __import__('3-say_my_name').say_my_name
 
 >>> say_my_name('Camilo', 'Zapata' )
