@@ -90,7 +90,7 @@ class Rectangle:
         area2 = rect_2.__height * rect_2.__width
 
         return rect_1 if area1 >= area2 else rect_2
-    
+
     @classmethod
     def square(cls, size=0):
         new_rectangle = Rectangle(size, size)
