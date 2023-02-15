@@ -1,12 +1,15 @@
 #!/usr/bin/python3
-# class  that inherits from list
+"""class  that inherits from list"""
 
 
 class MyList(list):
-    # class  that inherits from list
+    """class  that inherits from list"""
 
     def print_sorted(self):
-        # class  that inherits from list
-        self.sort_list = [1, 4, 2, 3, 5]
-        self.sort_list.sort()
-        print(self.sort_list)
+        """list to append and sort the list"""
+        sort_list = []
+
+        for i in self:
+            sort_list.append(i)
+        sort_list.sort()
+        print(sort_list)
