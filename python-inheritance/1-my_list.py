@@ -6,6 +6,7 @@ class MyList(list):
     # class  that inherits from list
 
     def print_sorted(self):
+        # class  that inherits from list
         self.sort_list = [1, 4, 2, 3, 5]
         self.sort_list.sort()
         print(self.sort_list)
