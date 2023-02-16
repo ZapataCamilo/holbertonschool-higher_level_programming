@@ -1,19 +1,56 @@
->>> MyList = __import__('1-my_list').MyList
->>> my_list = MyList()
->>> my_list.append(1)
->>> my_list.append(4)
->>> my_list.append(2)
->>> my_list.append(3)
->>> my_list.append(5)
->>> print(my_list)
-[1, 4, 2, 3, 5]
->>> my_list.print_sorted()
-[1, 2, 3, 4, 5]
->>> print(my_list)
-[1, 4, 2, 3, 5]
->>> my_list = MyList([-1])
->>> my_list.print_sorted()
-[-1]
->>> my_list = MyList()
->>> my_list.print_sorted()
-[]
+>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("my_int", 12)
+>>> bg.integer_validator("width", 89)
+>>> bg.integer_validator("age", True)
+Traceback (most recent call last):
+    ...
+TypeError: age must be an integer
+>>> bg.integer_validator("age", [0])
+Traceback (most recent call last):
+    ...
+TypeError: age must be an integer
+>>> bg.integer_validator("age", "h")
+Traceback (most recent call last):
+    ...
+TypeError: age must be an integer
+>>> bg.integer_validator()
+Traceback (most recent call last):
+    ...
+TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
+>>> bg.integer_validator("height", -9)
+Traceback (most recent call last):
+    ...
+ValueError: height must be greater than 0
+>>> bg.integer_validator("height", 0)
+Traceback (most recent call last):
+    ...
+ValueError: height must be greater than 0
+>>> bg.integer_validator("age", "h")
+Traceback (most recent call last):
+    ...
+TypeError: age must be an integer
+>>> bg.integer_validator()
+Traceback (most recent call last):
+    ...
+TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
+>>> bg.integer_validator("age", (4,))
+Traceback (most recent call last):
+    ...
+TypeError: age must be an integer
+>>> bg.integer_validator("age", {3, 4})
+Traceback (most recent call last):
+    ...
+TypeError: age must be an integer
+>>> bg.integer_validator("age", None)
+Traceback (most recent call last):
+    ...
+TypeError: age must be an integer
+>>> bg.area()
+Traceback (most recent call last):
+    ...
+Exception: area() is not implemented
+>>> bg.area(5)
+Traceback (most recent call last):
+    ...
+TypeError: area() takes 1 positional argument but 2 were given
