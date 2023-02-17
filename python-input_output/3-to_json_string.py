@@ -2,7 +2,7 @@
 import json
 """
  function that returns the JSON
- representation of an object (string)
+ representation of an object
 """
 
 
