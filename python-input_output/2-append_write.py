@@ -9,5 +9,6 @@ def append_write(filename="", text=""):
     """
     appends a string at the end
     """
+    
     with open(filename, mode='a', encoding='utf-8') as a:
         return a.write(text)
