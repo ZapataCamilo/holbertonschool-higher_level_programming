@@ -60,7 +60,7 @@ class Rectangle(Base):
         return self.__x
 
     @x.setter
-    def public_x(self, value):
+    def x(self, value):
         """Sets the value of the __width attribute"""
         self.__x = value
 
@@ -70,6 +70,6 @@ class Rectangle(Base):
         return self.__y
 
     @y.setter
-    def public_y(self, value):
+    def y(self, value):
         """Sets the value of the __width attribute"""
         self.__y = value
