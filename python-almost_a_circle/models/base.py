@@ -2,12 +2,16 @@
 
 class Base:
     """
-    This class is to now if there are a id in the object or not
+    this class give us a id for the object
     """
 
     __nb_objects = 0
 
     def __init__(self, id=None):
+        """
+        Here we ask if there are id,
+        if not put one with the private class attribute __nb_objects
+        """
 
         if id is not None:
             self.id = id
