@@ -35,41 +35,41 @@ class Rectangle(Base):
         super().__init__(id)
 
     @property
-    def public_width(self):
+    def width(self):
         """Returns the value of the __width attribute"""
         return self.__width
 
-    @public_width.setter
-    def public_width(self, value):
+    @width.setter
+    def width(self, value):
         """Sets the value of the __width attribute"""
         self.__width = value
 
     @property
-    def public_height(self):
+    def height(self):
         """Returns the value of the __width attribute"""
         return self.__height
 
-    @public_height.setter
-    def public_height(self, value):
+    @height.setter
+    def height(self, value):
         """Sets the value of the __width attribute"""
         self.__height = value
 
     @property
-    def public_x(self):
+    def x(self):
         """Returns the value of the __width attribute"""
         return self.__x
 
-    @public_x.setter
+    @x.setter
     def public_x(self, value):
         """Sets the value of the __width attribute"""
         self.__x = value
 
     @property
-    def public_y(self):
+    def y(self):
         """Returns the value of the __width attribute"""
         return self.__y
 
-    @public_y.setter
+    @y.setter
     def public_y(self, value):
         """Sets the value of the __width attribute"""
         self.__y = value
