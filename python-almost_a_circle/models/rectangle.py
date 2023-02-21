@@ -24,9 +24,11 @@ class Rectangle(Base):
         self.__x = x
         self.__y = y
         super().__init__(id)
+
     @property
     def public_set(self):
         return (self.__width, self.__height, self.__x, self.__y)
+
     @public_set.setter
     def public_set(self):
         return (self.width, self.height, self.x, self.y)
