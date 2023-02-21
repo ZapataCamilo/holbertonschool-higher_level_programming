@@ -1,8 +1,24 @@
 #!/usr/bin/python3
 from models.base import Base
+"""
+Name: rectangle
+---------------
+Class name: Rectangle
+---------------
+"""
+
 
 class Rectangle(Base):
+    """
+    this class give us a id, width and height
+    for the object
+    """
+
     def __init__(self, width, height, x=0, y=0, id=None):
+        """
+        Here we ask if there are id, width and height
+        if not put of id one with the private class attribute __nb_objects
+        """
         self.__width = width
         self.__height = height
         self.__x = x
