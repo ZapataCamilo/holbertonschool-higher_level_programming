@@ -12,6 +12,14 @@ class Rectangle(Base):
     """
     this class give us a id, width and height
     for the object
+    width: An integer representing the width of the rectangle.
+    height: An integer representing the height of the rectangle.
+    x: An integer representing the x coordinate of the rectangle.
+    Default is 0.
+    y: An integer representing the y coordinate of the rectangle.
+    Default is 0.
+    id: An integer representing the unique identifier of the rectangle.
+    Default is None.
     """
 
     def __init__(self, width, height, x=0, y=0, id=None):
