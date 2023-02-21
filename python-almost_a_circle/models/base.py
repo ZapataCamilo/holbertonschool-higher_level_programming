@@ -1,5 +1,10 @@
 #!/usr/bin/python3
-
+"""
+Name: base
+---------------
+Class name: Base
+---------------
+"""
 class Base:
     """
     this class give us a id for the object
