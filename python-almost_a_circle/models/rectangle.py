@@ -1,11 +1,12 @@
 #!/usr/bin/python3
-from models.base import Base
 """
 Name: rectangle
 ---------------
 Class name: Rectangle
 ---------------
 """
+
+from models.base import Base
 
 
 class Rectangle(Base):
@@ -57,7 +58,7 @@ class Rectangle(Base):
     def public_x(self):
         """Returns the value of the __width attribute"""
         return self.__x
-    
+
     @public_x.setter
     def public_x(self, value):
         """Sets the value of the __width attribute"""
