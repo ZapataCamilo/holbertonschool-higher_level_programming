@@ -1,4 +1,4 @@
-#!/usr/bin/pythont3
+#!/usr/bin/python3
 """
 Name: square
 ---------------
