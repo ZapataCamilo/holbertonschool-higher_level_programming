@@ -40,9 +40,9 @@ class Square(Rectangle):
         assigning an argument to each attribute.
         """
         if args:
-            if len(args) == 1 or args[0]:
+            if args[0]:
                 self.id = args[0]
-            if len(args) == 2 and args[1]:
+            if args[1]:
                 self.size = args[1]
             if len(args) == 3:
                 self.x = args[2]
