@@ -7,7 +7,6 @@ Class name: Base
 """
 import json
 
-
 class Base:
     """
     this class give us a id for the object
@@ -52,3 +51,13 @@ class Base:
         if json_string is None:
             return json_string == []
         return json.loads(json_string)
+    
+    @classmethod
+    def create(cls, **dictionary):
+        """returns an instance with all attributes already set"""
+        if cls.__name__ == 'Rectangle':
+            dum = cls(2, 1)
+        elif cls.__name__ == 'Square':
+            dum = cls(5)
+        dum.update(**dictionary)
+        return dum
