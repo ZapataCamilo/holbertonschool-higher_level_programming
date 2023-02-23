@@ -60,5 +60,5 @@ class Base:
             dum = cls(2, 1)
         elif cls.__name__ == 'Square':
             dum = cls(5)
-        dum.update(**dictionary)
-        return dum
+
+        return dum.update(**dictionary)
