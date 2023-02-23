@@ -69,11 +69,11 @@ class Base:
         """ returns a list of instances"""
         try:
             fl = f'{cls.__name__}.json'
-        
+            rt = []
+
             with open(fl, encoding='utf-8') as f:
                 temp = f.read()
                 obj = cls.from_json_string(temp)
-                rt = []
                 for i in obj:
                     rt.append(cls.create(**i))
             return rt
