@@ -128,9 +128,9 @@ class Rectangle(Base):
         """that returns the dictionary representation
         of a Rectangle"""
         dic = {"id": self.id,
-            "width": self.__width,
-            "height": self.__height,
-            "x": self.x,
-            "y": self.y
+               "width": self.__width,
+               "height": self.__height,
+               "x": self.x,
+               "y": self.y
                }
         return dic
