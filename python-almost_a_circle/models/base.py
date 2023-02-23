@@ -62,3 +62,20 @@ class Base:
             dum = cls(5)
 
         return dum.update(**dictionary)
+    
+    @classmethod
+    def load_from_file(cls):
+        """ returns a list of instances"""
+        try:
+            fl = f'{cls.__name__}.json'
+        
+            with open(fl, encoding='utf-8') as f:
+                temp = f.read()
+                obj = cls.from_json_string(temp)
+                rt = []
+                for i in obj:
+                    rt.append(cls.create(**i))
+            return rt
+
+        except Exception as e:
+            return []
