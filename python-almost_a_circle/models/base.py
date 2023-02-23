@@ -63,7 +63,7 @@ class Base:
             dum = cls(5)
         dum.update(**dictionary)
         return dum
-    
+
     @classmethod
     def load_from_file(cls):
         """ returns a list of instances"""
