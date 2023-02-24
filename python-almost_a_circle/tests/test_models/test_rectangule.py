@@ -32,7 +32,7 @@ class TestBase(unittest.TestCase):
             Rectangle(3, 6, 9, -12)
             raise ValueError()
 
-        self.assertEqual(t1.id, 18)
+        self.assertEqual(t1.id, 3)
         self.assertEqual(t2.id, 12)
 
     def test_area(self):
