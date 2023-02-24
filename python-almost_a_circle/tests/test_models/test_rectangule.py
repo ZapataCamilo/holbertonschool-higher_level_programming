@@ -1,25 +1,50 @@
 import unittest
+import os
+from io import StringIO
+from unittest.mock import patch
+from models.base import Base
 from models.rectangle import Rectangle
+from models.square import Square
 
-class Rectangle_Test(unittest.TestCase):
-    
+
+class TestBase(unittest.TestCase):
+
     def test_init(self):
-        r1 = Rectangle(10, 2)
-        r2 = Rectangle(3, 5, 6)
-        r3 = Rectangle(5, 7, 8, 9, 10)
+        t1 = Rectangle(1, 2)
+        t2 = Rectangle(6, 9, 0, 0 ,12)
+        with self.assertRaises(TypeError):
+            Rectangle("string")
+            Rectangle("3", 6)
+            Rectangle(3, "6")
+            Rectangle(3, 6, "9")
+            Rectangle(3, 6, 9, "12") 
+            Rectangle(None)
+            Rectangle(float("inf"))
+            Rectangle(3.6, 9.1)
+            raise TypeError()
+        
+        with self.assertRaises(ValueError):
+            Rectangle(-8, 9)
+            Rectangle(6, -9)
+            Rectangle(0, 3)
+            Rectangle(3, 0)
+            Rectangle(3, 6, -9)
+            Rectangle(3, 6, 9, -12)
+            raise ValueError()
 
-        self.assertEqual(r1.id, 1)
-        self.assertEqual(r2.id, 2)
-        self.assertEqual(r3.id, 10)
-        self.assertEqual(r1.width, 10)
-        self.assertEqual(r1.height, 2)
-        self.assertEqual(r1.x, 0)
-        self.assertEqual(r1.y, 0)
-        self.assertEqual(r2.width, 3)
-        self.assertEqual(r2.height, 5)
-        self.assertEqual(r2.x, 6)
-        self.assertEqual(r2.y, 0)
-        self.assertEqual(r3.width, 5)
-        self.assertEqual(r3.height, 7)
-        self.assertEqual(r3.x, 8)
-        self.assertEqual(r3.y, 9)
+        self.assertEqual(t1.id, 18)
+        self.assertEqual(t2.id, 12)
+
+    def test_area(self):
+        '''Testing area method'''
+        t3 = Rectangle(3, 2)
+        t4 = Rectangle(8, 7, 0, 0, 12)
+        t5 = Rectangle(999, 999)
+
+        self.assertEqual(t3.area(), 6)
+        self.assertEqual(t4.area(), 56)
+        self.assertEqual(t5.area(), 998001)
+        
+
+if __name__ == "__main__":
+    unittest.main()
