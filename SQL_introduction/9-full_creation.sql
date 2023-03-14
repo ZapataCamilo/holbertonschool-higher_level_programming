@@ -6,7 +6,7 @@ CREATE TABLE IF NOT EXISTS second_table (
 
 INSERT INTO second_table
 VALUES
-    (id=1, "John", 10),
-    (id=2, "Alex", 3),
-    (id=3, "Bob", 14),
-    (id=4, "George", 8);
+    (1, "John", 10),
+    (2, "Alex", 3),
+    (3, "Bob", 14),
+    (4, "George", 8);
