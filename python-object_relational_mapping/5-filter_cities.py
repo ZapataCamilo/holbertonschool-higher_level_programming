@@ -21,10 +21,10 @@ if __name__ == '__main__':
                 AND states.name = '{}'\
                 ORDER BY cities.id".format(argname))
     query_rows = cur.fetchall()
-    res = []
+    city = []
     for row in query_rows:
-        res.append(row[0])
+        city.append(row[0])
 
-    print(", ".join(res))
+    print(", ".join(city))
     cur.close()
     conn.close()
