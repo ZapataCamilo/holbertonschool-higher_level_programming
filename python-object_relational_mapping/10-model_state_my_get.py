@@ -22,12 +22,12 @@ if __name__ == '__main__':
     session = Session(engine)
 
     rows = session.query(State).all()
-    rp = ''
+    rp = "''"
 
     for i in rows:
         if state in i.__dict__['name']:
             rp = i.__dict__['id']
-    if rp != '':
+    if rp != "":
         print(rp)
     else:
         print('Not Found')
