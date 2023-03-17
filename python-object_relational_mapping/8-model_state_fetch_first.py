@@ -19,7 +19,7 @@ if __name__ == '__main__':
 
     session = Session(engine)
 
-    rows = session.query(State).all()
+    rows = session.query(State).first()
 
     if rows:
          print("{}: {}".format(rows.__dict__['id'], rows.__dict__['name']))
