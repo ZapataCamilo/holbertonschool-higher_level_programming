@@ -22,8 +22,8 @@ if __name__ == '__main__':
     rows = session.query(State).first()
 
     if rows:
-         print("{}: {}".format(rows.__dict__['id'], rows.__dict__['name']))
+        print("{}: {}".format(rows.__dict__['id'], rows.__dict__['name']))
     else:
-         print("Nothing")
+        print("Nothing")
 
     session.close()
