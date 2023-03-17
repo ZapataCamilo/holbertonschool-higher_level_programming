@@ -30,6 +30,6 @@ if __name__ == '__main__':
     if rp != "":
         print(rp)
     else:
-        print('Not Found')
+        print('Not found')
 
     session.close()
