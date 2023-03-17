@@ -18,7 +18,7 @@ if __name__ == '__main__':
     Base.metadata.create_all(engine)
 
     session = Session(engine)
-    
+
     rows = session.query(State).all()
 
     for i in rows:
