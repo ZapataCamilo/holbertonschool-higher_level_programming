@@ -2,7 +2,7 @@
 """
 contains the class definition of a State
 and an instance Base = declarative_base()
- """
+"""
 
 
 from sqlalchemy import Column, Integer, String
@@ -12,7 +12,7 @@ Base = declarative_base()
 
 
 class State(Base):
-    '''Creates State table.'''
+    """Creates State table."""
     tablename = 'states'
     id = Column(Integer, primary_key=True, unique=True,
                 autoincrement=True, nullable=False)
