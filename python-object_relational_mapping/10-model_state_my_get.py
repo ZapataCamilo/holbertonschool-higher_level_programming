@@ -25,11 +25,11 @@ if __name__ == '__main__':
     rp = ""
 
     for i in rows:
-        if sys.argv[4] in i.__dict__['name']:
+        if state in i.__dict__['name']:
             rp = i.__dict__['id']
-
     if rp != "":
         print(rp)
     else:
-        print("Not Found")
+        print('Not Found')
+
     session.close()
