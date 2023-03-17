@@ -16,7 +16,7 @@ if __name__ == '__main__':
     conn = MySQLdb.connect(host="localhost", port=3306, user=username,
                            passwd=password, db=database, charset="utf8")
     cur = conn.cursor()
-    cur.execute("SELECT cities.id, cities.name, states.name FROM cities\
+    cur.execute("SELECT cities.name FROM cities\
                 JOIN states ON cities.state_id = states.id\
                 AND states.name = '{}'\
                 ORDER BY cities.id".format(argname))
