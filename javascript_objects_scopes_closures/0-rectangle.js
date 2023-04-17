@@ -1,9 +1,5 @@
 #!/usr/bin/node
 
-class Rectangle {
+module.exports = class Rectangle {
 
 }
-
-const rd = new Rectangle();
-console.log(rd);
-console.log(Rectangle);
