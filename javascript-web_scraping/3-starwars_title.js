@@ -10,6 +10,6 @@ request(url + process.argv[2], function (error, response, body) {
     const js = JSON.parse(body);
     console.log(js.title);
   } else {
-    console.log(`Erro code: ${response.statusCode}`);
+    console.log(`Error code: ${response.statusCode}`);
   }
 });
